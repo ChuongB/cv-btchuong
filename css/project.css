@@ -95,9 +95,16 @@ section > .title h2 {
 }
 
 /* --------------- style for scopes----------------- */
+.scopes {
+  height: 281px;
+}
 .scopes > .content {
   display: flex;
   gap: var(--gutter);
+}
+
+.scopes .content .item {
+  width: 50%;
 }
 
 .scopes .content .item .title {
@@ -136,14 +143,13 @@ section > .title h2 {
 .primary .item {
   display: flex;
   gap: var(--gutter);
-  padding: 10px 10px 0 10px;
+  padding: 20px 10px 0 10px;
 }
 .primary .item .image {
   min-width: 20px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 10px;
 }
 
 .primary .item .image i {
@@ -213,6 +219,7 @@ section > .title h2 {
   .content .item {
     flex-direction: column;
     gap: 0;
+    width: 100%;
   }
 
   .item .image {
@@ -230,10 +237,18 @@ section > .title h2 {
   }
 
   /* --------------- style for scopes----------------- */
+
+  .scopes {
+    height: auto;
+  }
   .scopes .content {
     flex-direction: column;
     gap: 0;
   }
+  .scopes .content .item {
+    width: 100%;
+  }
+
   /* --------------- style for timeline----------------- */
 
   .timeline .item .image {
