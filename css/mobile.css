@@ -1,0 +1,61 @@
+@media screen and (max-width: 768px) {
+  span,
+  strong,
+  p,
+  li,
+  a,
+  td {
+    font-size: 12px;
+  }
+  /* ----------------------- style for navigation bar ---------------------- */
+  #nav-bar > .container {
+    flex-direction: column;
+    padding: 30px;
+  }
+  #nav-bar > .container > .avatar {
+    display: none;
+  }
+  #nav-bar > .container > div {
+    border: none;
+    padding: 10px;
+  }
+  #nav-bar > .container > div:last-child {
+    border: none;
+  }
+  /* ----------------------- style for about and target ---------------------- */
+  #target,
+  #personal-info {
+    padding: 15px;
+  }
+  /* ----------------------- style for job info ---------------------- */
+
+  #job-info > .container {
+    grid-template-columns: 1fr;
+  }
+  /* ----------------------- style for certificate ---------------------- */
+
+  #certificate > .container > div > div {
+    padding: 20px 0;
+    flex-direction: column;
+  }
+  #certificate > .container > div > div > div {
+    width: 100%;
+  }
+
+  #certificate > .container > div > div > div:nth-child(2) {
+    border-left: none;
+    border-top: 2px solid #d6c08d;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+
+  /* ----------------------- style for project ---------------------- */
+
+  #project > .container > div {
+    grid-template-columns: 1fr;
+  }
+
+  #project > .container > div > div .info span.blue {
+    margin-bottom: 5px;
+  }
+}

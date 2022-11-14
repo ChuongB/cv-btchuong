@@ -1,0 +1,42 @@
+@media screen and (max-width: 992px) {
+  /* ----------------------- style section ---------------------- */
+  section > .container {
+    padding: 20px;
+  }
+  /* ----------------------- style for navigation bar ---------------------- */
+  #nav-bar > .container > .avatar {
+    width: 100px;
+  }
+  #nav-bar > .container > .avatar img {
+    display: none;
+  }
+
+  /* ----------------------- style for about and target ---------------------- */
+  #target,
+  #personal-info {
+    padding: 0 20px;
+  }
+
+  #target h1,
+  #personal-info h1 {
+    padding-bottom: 10px;
+  }
+  #personal-info .link {
+    padding-top: 0;
+  }
+
+  /* ----------------------- style for job info ---------------------- */
+
+  #job-info > .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ----------------------- style for certificate ---------------------- */
+  #certificate > .container > div > div > div {
+    flex-direction: column;
+  }
+  #certificate > .container > div > div > div > img {
+    width: 100%;
+    padding-right: 20px;
+  }
+}

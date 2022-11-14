@@ -1,0 +1,242 @@
+/* reset default css and variable declaration */
+:root {
+  --blue-color: #0666c5;
+  --border-color: #ebeaea;
+  --border-color-dark: #d9d9d9;
+  --text-gray-color: gray;
+  --gutter: 20px;
+}
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+span,
+strong,
+td,
+p,
+li {
+  font-size: 14px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.bg-blue {
+  background: var(--blue-color);
+}
+
+/* --------------- style for container----------------- */
+
+.container {
+  display: flex;
+  gap: var(--gutter);
+  max-width: 95vw;
+  margin: 50px auto;
+}
+.container > .goals-scopes {
+  width: calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter);
+}
+
+.container > .team-primary {
+  width: calc(25% - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter);
+}
+
+.container > .timeline {
+  width: calc(25% - 20px);
+}
+
+section {
+  padding: var(--gutter);
+  background-color: white;
+  padding-bottom: 50px;
+}
+section > .title {
+  color: var(--blue-color);
+  border-bottom: 1px solid var(--border-color-dark);
+}
+section > .title h2 {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+/* --------------- style for goals----------------- */
+
+.goals {
+  height: 317px;
+}
+.goals .item {
+  display: flex;
+  gap: var(--gutter);
+  padding: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+.goals .item .image {
+  min-width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.goals .item .image i {
+  font-size: 20px;
+}
+
+.goals .item .text .text--title {
+  font-weight: bolder;
+}
+
+/* --------------- style for scopes----------------- */
+.scopes > .content {
+  display: flex;
+  gap: var(--gutter);
+}
+
+.scopes .content .item .title {
+  padding: 10px 0;
+}
+
+.scopes .content .item .title h5 {
+  font-weight: bolder;
+}
+
+/* --------------- style for team----------------- */
+
+.team .item {
+  display: flex;
+  gap: var(--gutter);
+  padding: 5px 10px 0 10px;
+}
+.team .item .image {
+  min-width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.team .item .image i {
+  font-size: 20px;
+}
+
+.team .item .text .text--title {
+  font-weight: bolder;
+}
+
+/* --------------- style for primary----------------- */
+
+.primary .item {
+  display: flex;
+  gap: var(--gutter);
+  padding: 10px 10px 0 10px;
+}
+.primary .item .image {
+  min-width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.primary .item .image i {
+  font-size: 20px;
+}
+
+.primary .item .text .text--title {
+  font-weight: bolder;
+}
+
+/* --------------- style for timeline----------------- */
+.timeline .item {
+  display: flex;
+  gap: var(--gutter);
+  padding: 10px;
+}
+.timeline .item .image {
+  /* min-width: 60px; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.timeline .item .image span {
+  font-size: 16px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bolder;
+  background-color: #c37cdb;
+  border: 2px solid gray;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline .item .text {
+  border-bottom: 1px dashed var(--blue-color);
+}
+
+.timeline .item .text .text--title {
+  font-weight: bolder;
+}
+
+/* ----------------------- responsive ----------------------- */
+
+@media screen and (max-width: 992px) {
+  /* --------------- style for container----------------- */
+
+  .container {
+    flex-direction: column;
+  }
+  .container > .goals-scopes {
+    width: 100%;
+  }
+
+  .container > .team-primary {
+    width: 100%;
+  }
+
+  .container > .timeline {
+    width: 100%;
+  }
+  .content .item {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .item .image {
+    padding: 0;
+  }
+
+  /* --------------- style for goals----------------- */
+
+  .goals {
+    height: auto;
+  }
+
+  .goals .item {
+    gap: 0;
+  }
+
+  /* --------------- style for scopes----------------- */
+  .scopes .content {
+    flex-direction: column;
+    gap: 0;
+  }
+  /* --------------- style for timeline----------------- */
+
+  .timeline .item .image {
+    justify-content: flex-start;
+  }
+}
